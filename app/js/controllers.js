@@ -3,10 +3,10 @@
 /* Controllers */
 
 
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
+function CatalogCtrl() {}
+CatalogCtrl.$inject = [];
 
 
-function MyCtrl2() {
+function ItemCtrl() {
 }
-MyCtrl2.$inject = [];
+ItemCtrl.$inject = [];
