@@ -2,19 +2,23 @@
 <html ng-app="gamestore">
 <head>
   <meta charset="utf-8">
-  <title>My AngularJS App</title>
+  <title>Game Store</title>
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
   <h1>Game Store</h1>
 
-  <div id="content">
+  <ul id="menu">
+      <li><a href="#/">Catalogue des jeux</a></li>
+      <li><a href="#/cart">Votre panier</a></li>
+  </ul>
+
+  <div id="content" ng-controller="MainCtrl">
       <div ng-view></div>
 
       <p id="content-bottom"></p>
   </div>
 
-  <div>Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>

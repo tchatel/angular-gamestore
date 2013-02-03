@@ -1,0 +1,8 @@
+{
+    "ref": "RFTG",
+    "name": "Race for the Galaxy",
+    "designer": "Thomas Lehmann",
+    "intro": "Votre objectif : construire l'empire spatial le plus puissant et prospère de tous les temps !",
+    "desc": "<p>In the card game <i>Race for the Galaxy</i>, players build galactic civilizations by playing game cards in front of them that represent worlds or technical and social developments. Some worlds allow players to produce goods, which can be consumed later to gain either card draws or victory points when the appropriate technologies are available to them. These are mainly provided by the developments and worlds that are not able to produce, but the fancier production worlds also give these bonuses.</p><p>At the beginning of each round, players each select, secretly and simultaneously, one of the seven roles which correspond to the phases in which the round progresses. By selecting a role, players activate that phase for this round, giving each player the opportunity to perform that phase's action. For example, if one player chooses the settle role, each player has the opportunity to settle one of the planets from their hand. The player who has chosen the role, however, gets a bonus that applies only to him. But bonuses may also be acquired through developments, so one must be aware when another player also takes advantage of his choice of role.</p>",
+    "price": 25.00
+}

@@ -1,0 +1,7 @@
+<h2>{{game.name}}</h2>
+
+<img ng-src="img/{{game.ref}}.jpg"/>
+
+<p class="designer">Auteur : {{game.designer}}</p>
+<p class="intro">{{game.intro}}</p>
+<p class="desc" ng-bind-html-unsafe="game.desc"></p>
