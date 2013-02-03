@@ -3,10 +3,13 @@
 /* Controllers */
 
 
-function CatalogCtrl() {}
-CatalogCtrl.$inject = [];
+function CatalogCtrl($scope, $http) {
 
+    $http.get("data/catalog.json.js").success(function (data) {
+        $scope.catalog = data;
+    });
 
-function ItemCtrl() {
 }
-ItemCtrl.$inject = [];
+
+function ItemCtrl($scope) {
+}

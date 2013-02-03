@@ -1,0 +1,14 @@
+<h2>Catalogue des jeux</h2>
+
+<p>
+    Recherche : <input ng-model="search"/>
+</p>
+
+<ul id="catalog">
+    <li ng-repeat="item in catalog | filter:search">
+        <h3>{{item.name}}</h3>
+        <img ng-src="img/{{item.ref}}.jpg"/>
+        <p class="designer">Auteur : {{item.designer}}</p>
+        <p class="intro">{{item.intro}}</p>
+    </li>
+</ul>

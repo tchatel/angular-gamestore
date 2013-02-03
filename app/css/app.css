@@ -1,4 +1,78 @@
-/* app css stylesheet */
+
+body {
+    background-color: #2d301b;
+    width: 900px;
+    margin: 10px auto 10px auto;
+    padding: 0;
+}
+
+#content {
+    background-color: #dad295;
+    margin: 0;
+    padding: 1em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#content-bottom {
+    clear: both;
+}
+
+h1 {
+    background-color: #edc70a;
+    margin: 0;
+    padding: 0.3em 0 0.3em 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    font-size: 3em;
+    color: #242815;
+}
+
+ul#catalog {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul#catalog li {
+    float: left;
+    display: inline-block;
+    list-style-type: none;
+    width: 180px;
+    height: 220px;
+    margin: 4px;
+    padding: 5px;
+    border: solid 1px grey;
+    border-radius: 3px;
+}
+
+ul#catalog li h3 {
+    margin: 0;
+    padding: 0 0 0.3em 0;
+    font-size: 1em;
+}
+
+ul#catalog li img {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+ul#catalog li p {
+    padding: 0;
+    margin: 0.3em 0 0.3em 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+ul#catalog li p.designer {
+    font-style: italic;
+}
+ul#catalog li p.intro {
+}
+
+
+/* -- OLD --- */
+
 
 .menu {
   list-style: none;
@@ -10,6 +84,7 @@
 .menu:before {
   content: "[";
 }
+
 
 .menu:after {
   content: "]";
