@@ -52,7 +52,7 @@ ul#menu li a {
     color: #fff;
 }
 
-
+/* ------------------------------- Catalog ------------------------------------------------------------------------*/
 ul#catalog {
     margin: 0 auto 0 auto;
     padding: 0;
@@ -107,7 +107,7 @@ ul#catalog li p.intro {
 ul#catalog li div.footer span.price {
     float: left;
     color: #8b0000;
-    font-size: 12px;
+    font-size: 0.9em;
     font-style: normal;
     font-weight: bold;
 }
@@ -128,6 +128,74 @@ ul#catalog li div.footer button:hover {
 ul#catalog li div.footer button:active {
     background-color: #8b6d0d;
 }
+
+/* ------------------------------- Game ------------------------------------------------------------------------*/
+
+div#game img#box {
+    float: left;
+    max-width: 160px;
+    max-height: 160px;
+}
+div#game div#details {
+    margin-left: 180px;
+}
+div#game div#details p.designer {
+    font-size: 0.85em;
+    font-style: italic;
+}
+div#game div#details p.intro {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 1em 0 1em 0;
+}
+div#game div#details p.desc {
+    font-size: 0.9em;
+}
+
+div#game div#footer {
+    margin-left: 570px;
+}
+div#game div#footer span.price {
+    color: #8b0000;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: bold;
+}
+div#game div#footer button {
+    float: right;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    background-color: #d0b712;
+    color: #111;
+    border: solid 1px #5a6636;
+    border-radius: 3px;
+}
+div#game div#footer button:hover {
+    background-color: #fade11;
+    color: #000;
+    border: solid 1px #452;
+}
+div#game div#footer button:active {
+    background-color: #8b6d0d;
+}
+
+div#game div#images {
+    clear: both;
+    padding-top: 2em;
+    text-align: center;
+}
+div#game div#images .image {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+}
+div#game div#images .image img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+/* ------------------------------- Cart ------------------------------------------------------------------------*/
 
 table#cart {
     width: 100%;
