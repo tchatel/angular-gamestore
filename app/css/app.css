@@ -214,16 +214,16 @@ table#cart th {
     text-align: center;
 }
 table#cart th.item {
-    width: 55%;
+    width: 53%;
 }
 table#cart th.price {
     width: 10%;
 }
 table#cart th.qty {
-    width: 15%;
+    width: 12%;
 }
 table#cart th.total {
-    width: 10%;
+    width: 15%;
 }
 
 table#cart td.img {

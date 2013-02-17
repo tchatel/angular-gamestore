@@ -15,7 +15,7 @@
         <td class="qty"><input ng-model="row.qty"/></td>
         <td class="total">{{row.game.price * row.qty | number:2}} €</td>
     </tr>
-    <tr ng-show="cart.empty() > 0">
+    <tr ng-show="cart.empty()">
         <td colspan="5" class="vide">Votre panier est vide</td>
     </tr>
 </table>

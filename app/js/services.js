@@ -7,9 +7,8 @@
 // In this case it is a simple value service.
 var srv = angular.module('gamestore.services', []);
 
-srv.value('version', '0.1');
-
 srv.value('TVA', 19.6);
+
 srv.factory('Cart', ['TVA', function (TVA) {
     return {
         rows: {},
