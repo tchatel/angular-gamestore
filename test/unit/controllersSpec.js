@@ -77,11 +77,11 @@ describe('GameStore controllers', function () {
             ctrl = $controller(GameCtrl, {$scope: scope, $routeParams: {ref: 'AGOT'}});
         }));
 
-
         it('should load game information', function () {
             expect(scope.game).toBeUndefined();
             $httpBackend.flush();
             expect(scope.game.ref).toBe("AGOT");
+            expect(scope.game.desc).toMatch(/Westeros/);
         });
 
     });
