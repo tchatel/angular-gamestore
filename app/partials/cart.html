@@ -12,7 +12,7 @@
         <td class="img"><a href="#/game/{{row.game.ref}}"><img ng-src="img/{{row.game.ref}}.jpg"/></a></td>
         <td class="item"><a href="#/game/{{row.game.ref}}">{{row.game.name}}</a></td>
         <td class="price">{{row.game.price | number:2}} €</td>
-        <td class="qty"><input ng-model="row.qty"/></td>
+        <td class="qty"><input class="qty" ng-model="row.qty"/></td>
         <td class="total">{{row.game.price * row.qty | number:2}} €</td>
     </tr>
     <tr ng-show="cart.empty()">

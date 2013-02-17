@@ -36,25 +36,27 @@ describe('angular-gamestore', function () {
         });
         it('should render empty cart view when user navigates to #/cart', function () {
             expect(element('h2').text()).toMatch(/panier/);  //TODO anglais
-            expect(repeater('#cart tr.game').count()).toEqual(0);
+            expect(element('#cart tr.game').count()).toEqual(0);
         });
     });
 
     describe('Add to cart ; different ways', function () {
         beforeEach(function () {
             browser().navigateTo('#/cart');
-            expect(repeater('#cart tr.game').count()).toEqual(0);
+            expect(element('#cart tr.game').count()).toEqual(0);
         });
-        it('Add to cart from catalog', function () {
+
+        it('should add to cart from catalog', function () {
             browser().navigateTo('#/catalog');
             expect(element('#catalog li').count()).toBeGreaterThan(1);
             element('#catalog li:nth-child(1) .add').click();
             browser().navigateTo('#/catalog');
             element('#catalog li:nth-child(2) .add').click();
             browser().navigateTo('#/cart');
-            expect(repeater('#cart tr.game').count()).toEqual(2);
+            expect(element('#cart tr.game').count()).toEqual(2);
         });
-        it('Add to cart from game pages', function () {
+
+        it('should add to cart from game pages', function () {
             browser().navigateTo('#/catalog');
             expect(element('#catalog li').count()).toBeGreaterThan(1);
             element('#catalog li:nth-child(1) img').click();
@@ -63,8 +65,26 @@ describe('angular-gamestore', function () {
             element('#catalog li:nth-child(2) img').click();
             element('.add').click();
             browser().navigateTo('#/cart');
-            expect(repeater('#cart tr.game').count()).toEqual(2);
+            expect(element('#cart tr.game').count()).toEqual(2);
         });
+
+        it('should increment quantity for a game already in cart', function () {
+            browser().navigateTo('#/catalog');
+            expect(element('#catalog li').count()).toBeGreaterThan(1);
+            element('#catalog li:nth-child(1) img').click();
+            element('.add').click();
+            browser().navigateTo('#/cart');
+            expect(element('#cart tr.game').count()).toEqual(1);
+            expect(element('#cart tr.game input.qty').val()).toEqual("1");
+            browser().navigateTo('#/catalog');
+            element('#catalog li:nth-child(1) img').click();
+            element('.add').click();
+            browser().navigateTo('#/cart');
+            expect(element('#cart tr.game').count()).toEqual(1);
+            expect(element('#cart tr.game input.qty').val()).toEqual("2");
+        });
+
+
     });
 
 
