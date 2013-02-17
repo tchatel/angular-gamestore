@@ -18,6 +18,19 @@ body {
     clear: both;
 }
 
+#footer {
+    color: #aaa;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 5px;
+}
+#footer a {
+    color: #88f;
+}
+#footer a:visited {
+    color: #66f;
+}
+
 h1 {
     background-color: #edc70a;
     margin: 0;
