@@ -2,9 +2,6 @@
 
 /* Services */
 
-
-// Demonstrate how to register services
-// In this case it is a simple value service.
 var srv = angular.module('gamestore.services', []);
 
 srv.value('TVA', 19.6);
