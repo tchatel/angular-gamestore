@@ -8,7 +8,7 @@
         <th class="qty">Quantité</th>
         <th class="total">Total</th>
     </tr>
-    <tr ng-repeat="row in cart.rows">
+    <tr class="game" ng-repeat="row in cart.rows">
         <td class="img"><a href="#/game/{{row.game.ref}}"><img ng-src="img/{{row.game.ref}}.jpg"/></a></td>
         <td class="item"><a href="#/game/{{row.game.ref}}">{{row.game.name}}</a></td>
         <td class="price">{{row.game.price | number:2}} €</td>
