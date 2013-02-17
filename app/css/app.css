@@ -189,6 +189,7 @@ div#game div#images .image {
     display: inline-block;
     width: 250px;
     height: 250px;
+    margin:5px;
 }
 div#game div#images .image img {
     max-width: 250px;
