@@ -4,7 +4,7 @@
 
 describe('angular-gamestore', function () {
     beforeEach(function () {
-        browser().navigateTo('../../../angular-gamestore/app/index.html');  //TODO l'url dépend d'où est lancé Node.js
+        browser().navigateTo('../../app/index.html');
     });
 
     it('should automatically redirect to /catalog when location hash/fragment is empty', function () {
@@ -26,7 +26,7 @@ describe('angular-gamestore', function () {
             browser().navigateTo('#/game/AGOT');
         });
         it('should render game details view when user navigates to #/game/AGOT', function () {
-            expect(element('h2').text()).toMatch(/Trône/);  //TODO anglais
+            expect(element('h2').text()).toMatch(/Trône/);
         });
     });
 
@@ -35,7 +35,7 @@ describe('angular-gamestore', function () {
             browser().navigateTo('#/cart');
         });
         it('should render empty cart view when user navigates to #/cart', function () {
-            expect(element('h2').text()).toMatch(/panier/);  //TODO anglais
+            expect(element('h2').text()).toMatch(/panier/);
             expect(element('#cart tr.game').count()).toEqual(0);
         });
     });
