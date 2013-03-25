@@ -2,11 +2,11 @@
 
 /* Services */
 
-var srv = angular.module('gamestore.services', []);
+var moduleSrv = angular.module('gamestore.services', []);
 
-srv.value('TVA', 19.6);
+moduleSrv.value('TVA', 19.6);
 
-srv.factory('Cart', ['TVA', function (TVA) {
+moduleSrv.factory('Cart', ['TVA', function (TVA) {
     return {
         rows: {},
         add: function (game) {
