@@ -2,6 +2,7 @@
 
 
 describe('GameStore controllers', function () {
+    beforeEach(module('gamestore.controllers'));
 
     describe('CatalogCtrl', function () {
         var scope, ctrl, $httpBackend;
@@ -41,7 +42,7 @@ describe('GameStore controllers', function () {
                 );
 
             scope = $rootScope.$new();
-            ctrl = $controller(CatalogCtrl, {$scope: scope});
+            ctrl = $controller('CatalogCtrl', {$scope: scope});
         }));
 
         it('should create "catalog" model with 3 games fetched from xhr', function () {
@@ -74,7 +75,7 @@ describe('GameStore controllers', function () {
                 );
 
             scope = $rootScope.$new();
-            ctrl = $controller(GameCtrl, {$scope: scope, $routeParams: {ref: 'AGOT'}});
+            ctrl = $controller('GameCtrl', {$scope: scope, $routeParams: {ref: 'AGOT'}});
         }));
 
         it('should load game information', function () {

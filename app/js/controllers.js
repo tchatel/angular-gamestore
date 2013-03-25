@@ -1,25 +1,28 @@
 'use strict';
 
 /* Controllers */
-function MainCtrl($scope, $location, Cart) {
+
+var moduleCtrl = angular.module('gamestore.controllers', ['gamestore.services']);
+
+moduleCtrl.controller('MainCtrl', function ($scope, $location, Cart) {
     $scope.addCart = function (game) {
         Cart.add(game);
         $location.url("/cart");
     }
-}
+});
 
-function CatalogCtrl($scope, $http) {
+moduleCtrl.controller('CatalogCtrl', function ($scope, $http) {
     $http.get("data/catalog.json").success(function (data) {
         $scope.catalog = data;
     });
-}
+});
 
-function GameCtrl($scope, $routeParams, $http) {
+moduleCtrl.controller('GameCtrl', function ($scope, $routeParams, $http) {
     $http.get("data/" + $routeParams.ref + ".json").success(function (data) {
         $scope.game = data;
     });
-}
+});
 
-function CartCtrl($scope, Cart) {
+moduleCtrl.controller('CartCtrl', function ($scope, Cart) {
     $scope.cart = Cart;
-}
+});
